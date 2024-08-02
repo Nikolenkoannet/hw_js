@@ -1,5 +1,5 @@
 'use strict'
 
-const Username =prompt('Enter user name')
+const UserName =prompt('Enter user name')
 
-alert(`Hello ${Username}, how are you?`)
+alert(`Hello ${UserName}, how are you?`)
