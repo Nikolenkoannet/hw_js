@@ -1,13 +1,13 @@
 'use strict'
 
-let name = 'John';
-let admin = name;
+const name = 'John';
+const admin = name;
 alert(admin);
 
-let earth;
-let userName;
+const earth;
+const userName;
 
-let numbers = 10 +'10'
+const numbers = 10 +'10'
 console.log(typeof numbers)
 
 
