@@ -11,3 +11,4 @@ number3 = Number(number3);
 const average = (number1 + number2 + number3) / 3;
 
 alert(`${average}`);
+
