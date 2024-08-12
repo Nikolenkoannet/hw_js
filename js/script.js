@@ -1,9 +1,9 @@
 'use strict'
 
-let hours = prompt("Введіть кількість годин");
+const hours = prompt("Введіть кількість годин");
 
-let seconds = hours * 3600;
+const seconds = hours * 3600;
 
-let result = ("Кількість секунд: " + seconds);
+const result = ("Кількість секунд: " + seconds);
 
 alert(result)
