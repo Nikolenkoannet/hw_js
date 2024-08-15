@@ -5,6 +5,8 @@ const currentYear = new Date().getFullYear();
 const  currentAge = currentYear - yearOfBirth;
 console.log(currentAge);
 
+let ageMessage = yearOfBirth ? `Ваш вік: ${currentAge}` : 'Шкода, що Ви не захотіли ввести свій рік народження.';
+
 
 const countryCityMap = {
     kyiv: 'Ukraine',
@@ -12,7 +14,7 @@ const countryCityMap = {
     london: 'Great Britain',
 };
 const city = prompt('Введіть ваше місто');
-countryCityMap[city.toLowerCase()] ? console.log(countryCityMap[city.toLowerCase()]) : null;
+const cityMessage = city ? (countryCityMap[city.toLowerCase()] ? `Ти живеш у столиці ${countryCityMap[city.toLowerCase()]}.` : `Ти живеш у місті ${city}.`) : 'Шкода, що Ви не захотіли ввести ваше місто.';
 
 
 const sportChampionMap = {
@@ -21,4 +23,6 @@ const sportChampionMap = {
     boxing: 'Oleksandr Usyk'
 };
 const sport = prompt('Введіть ваш вид спорту');
-sportChampionMap[sport.toLowerCase()] ? console.log(sportChampionMap[sport.toLowerCase()]) : null;
+const sportMessage = sport ? (sportChampionMap[sport.toLowerCase()] ? `Круто! Хочеш стати як ${sportChampionMap[sport.toLowerCase()]}?` : `Цікаво! Твій улюблений вид спорту: ${sport}.`) : 'Шкода, що Ви не захотіли ввести свій улюблений вид спорту.';
+
+alert(`${ageMessage}\n${cityMessage}\n${sportMessage}`);
