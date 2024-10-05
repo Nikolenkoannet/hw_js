@@ -1,8 +1,18 @@
-'use strict'
+'use strict';
 
-let randomNumber = Math.floor(Math.random() * 9) + 1;
-let imagePath = "images/" + randomNumber + ".jpg";
+function getRandomNumber() {
+    return Math.floor(Math.random() * 9) + 1;
+}
 
-console.log(imagePath);
+function createImageElement() {
+    let randomNumber = getRandomNumber();
+    let imagePath = "images/" + randomNumber + ".jpg";
+    return `<img src="${imagePath}" alt="Random Image" width="300">`;
+}
 
-document.body.innerHTML = `<img src="${imagePath}" alt="Random Image" width="300">`;
+function insertElementToPage() {
+    let imageElement = createImageElement();
+    document.body.innerHTML += imageElement;
+}
+
+insertElementToPage();
