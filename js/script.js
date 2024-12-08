@@ -23,3 +23,4 @@ const firstItem = ulElement.firstElementChild;
 firstItem.setAttribute('data-my-name', 'Ann');
 
 ulElement.removeAttribute('data-dog-tail');
+
